@@ -1,7 +1,7 @@
 # Status
 
-| Repo | General | Readme | Galaxy |
-| --- | --- | --- | --- |
+| Repo | Docker
+| --- | --- |
 <%- @repos.each do |row| -%>
-| [<%= row %>](https://github.com/toolhippie/<%= row %>) | [![Testing Build](https://github.com/toolhippie/<%= row %>/actions/workflows/general.yml/badge.svg)](https://github.com/toolhippie/<%= row %>/actions/workflows/general.yml) | [![Readme Build](https://github.com/toolhippie/<%= row %>/actions/workflows/readme.yml/badge.svg)](https://github.com/toolhippie/<%= row %>/actions/workflows/readme.yml) | [![Galaxy Build](https://github.com/toolhippie/<%= row %>/actions/workflows/galaxy.yml/badge.svg)](https://github.com/toolhippie/<%= row %>/actions/workflows/galaxy.yml) |
+| [<%= row %>](https://github.com/toolhippie/<%= row %>) | [![Docker Build](https://github.com/toolhippie/<%= row %>/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/<%= row %>/actions/workflows/docker.yml) |
 <%- end -%>
