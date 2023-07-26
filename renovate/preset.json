@@ -29,7 +29,9 @@
                 "docker/login-action",
                 "docker/metadata-action",
                 "docker/setup-buildx-action",
-                "docker/setup-qemu-action"
+                "docker/setup-qemu-action",
+                "EndBug/add-and-commit",
+                "ruby/setup-ruby"
             ],
             "semanticCommitType": "ci",
             "semanticCommitScope": "tools",
@@ -45,7 +47,9 @@
                 "docker/login-action",
                 "docker/metadata-action",
                 "docker/setup-buildx-action",
-                "docker/setup-qemu-action"
+                "docker/setup-qemu-action",
+                "EndBug/add-and-commit",
+                "ruby/setup-ruby"
             ],
             "matchDatasources": [
                 "github-releases"
@@ -60,7 +64,7 @@
             ],
             "semanticCommitType": "major",
             "semanticCommitScope": "deps",
-            "automerge": false
+            "automerge": true
         },
         {
             "description": "Semantic commits for minor updates",
@@ -70,7 +74,7 @@
             ],
             "semanticCommitType": "minor",
             "semanticCommitScope": "deps",
-            "automerge": false
+            "automerge": true
         },
         {
             "description": "Semantic commits for patch updates",
