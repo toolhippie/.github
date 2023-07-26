@@ -1,0 +1,103 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "Preset used by Toolhippie"
+    ],
+    "extends": [
+        "config:base",
+        ":semanticCommits",
+        ":semanticCommitType(deps)"
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "Dockerfile"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\nENV .*?_VERSION=(?<currentValue>.*)"
+            ]
+        }
+    ],
+    "packageRules": [
+        {
+            "description": "Build tool version upgrades",
+            "groupName": "build tools",
+            "matchPackageNames": [
+                "actionhippie/pushrm",
+                "actions/checkout",
+                "docker/build-push-action",
+                "docker/login-action",
+                "docker/metadata-action",
+                "docker/setup-buildx-action",
+                "docker/setup-qemu-action"
+            ],
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "tools",
+            "automerge": true
+        },
+        {
+            "description": "Strip v prefix from versions",
+            "groupName": "version prefix",
+            "excludePackageNames": [
+                "actionhippie/pushrm",
+                "actions/checkout",
+                "docker/build-push-action",
+                "docker/login-action",
+                "docker/metadata-action",
+                "docker/setup-buildx-action",
+                "docker/setup-qemu-action"
+            ],
+            "matchDatasources": [
+                "github-releases"
+            ],
+            "extractVersion": "^v(?<version>.*)$"
+        },
+        {
+            "description": "Semantic commits for major updates",
+            "groupName": "major updates",
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "semanticCommitType": "major",
+            "semanticCommitScope": "deps",
+            "automerge": false
+        },
+        {
+            "description": "Semantic commits for minor updates",
+            "groupName": "minor updates",
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "semanticCommitType": "minor",
+            "semanticCommitScope": "deps",
+            "automerge": false
+        },
+        {
+            "description": "Semantic commits for patch updates",
+            "groupName": "patch updates",
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "semanticCommitType": "patch",
+            "semanticCommitScope": "deps",
+            "automerge": true
+        },
+        {
+            "description": "Automerge docker version updates",
+            "groupName": "docker updates",
+            "matchDatasources": [
+                "docker"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "semanticCommitType": "minor",
+            "semanticCommitScope": "deps",
+            "automerge": true
+        }
+    ],
+    "labels": [
+        "renovate"
+    ]
+}
