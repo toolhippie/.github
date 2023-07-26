@@ -17,7 +17,7 @@ GEM
       faraday (>= 0.17.3, < 3)
 
 PLATFORMS
-  x86_64-linux-musl
+  x86_64-linux
 
 DEPENDENCIES
   octokit (~> 6.0)
