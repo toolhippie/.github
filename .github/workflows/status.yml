@@ -2,9 +2,7 @@
 name: status
 
 "on":
-  push:
-    branches:
-      - master
+  workflow_dispatch:
   schedule:
     - cron:  "30 5 * * *"
 
@@ -21,7 +19,6 @@ jobs:
       - name: Setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
           bundler-cache: true
 
       - name: Write date
@@ -38,7 +35,7 @@ jobs:
           author_name: GitHub Actions
           author_email: github@webhippie.de
           add: STATUS.md .github/STATUS
-          message: automated status update [skip ci]
+          message: "docs: automated status update [skip ci]"
           push: true
           commit: --signoff
 

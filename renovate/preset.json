@@ -11,7 +11,8 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "Dockerfile"
+                "(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$",
+                "(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$"
             ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\nENV .*?_VERSION=(?<currentValue>.*)"
@@ -20,37 +21,8 @@
     ],
     "packageRules": [
         {
-            "description": "Build tool version upgrades",
-            "groupName": "build tools",
-            "matchPackageNames": [
-                "actionhippie/pushrm",
-                "actions/checkout",
-                "docker/build-push-action",
-                "docker/login-action",
-                "docker/metadata-action",
-                "docker/setup-buildx-action",
-                "docker/setup-qemu-action",
-                "EndBug/add-and-commit",
-                "ruby/setup-ruby"
-            ],
-            "semanticCommitType": "ci",
-            "semanticCommitScope": "tools",
-            "automerge": true
-        },
-        {
             "description": "Strip v prefix from versions",
             "groupName": "version prefix",
-            "excludePackageNames": [
-                "actionhippie/pushrm",
-                "actions/checkout",
-                "docker/build-push-action",
-                "docker/login-action",
-                "docker/metadata-action",
-                "docker/setup-buildx-action",
-                "docker/setup-qemu-action",
-                "EndBug/add-and-commit",
-                "ruby/setup-ruby"
-            ],
             "matchDatasources": [
                 "github-releases"
             ],
@@ -98,6 +70,16 @@
             ],
             "semanticCommitType": "minor",
             "semanticCommitScope": "deps",
+            "automerge": true
+        },
+        {
+            "description": "Build tool version upgrades",
+            "groupName": "build tools",
+            "matchManagers": [
+                "github-actions"
+            ],
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "tools",
             "automerge": true
         }
     ],
