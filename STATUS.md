@@ -30,6 +30,9 @@
 ## elasticsearch-curator
 [![docker build](https://github.com/toolhippie/elasticsearch-curator/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/elasticsearch-curator/actions/workflows/docker.yml)
 
+## flac2all
+[![docker build](https://github.com/toolhippie/flac2all/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/flac2all/actions/workflows/docker.yml)
+
 ## ghi
 [![docker build](https://github.com/toolhippie/ghi/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/ghi/actions/workflows/docker.yml)
 
