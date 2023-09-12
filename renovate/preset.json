@@ -24,7 +24,8 @@
             "description": "Strip v prefix from versions",
             "groupName": "version prefix",
             "matchDatasources": [
-                "github-releases"
+                "github-releases",
+		"gitlab-releases"
             ],
             "extractVersion": "^v(?<version>.*)$"
         },
