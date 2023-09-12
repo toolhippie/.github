@@ -21,6 +21,9 @@
 ## calens
 [![docker build](https://github.com/toolhippie/calens/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/calens/actions/workflows/docker.yml)
 
+## commitlint
+[![docker build](https://github.com/toolhippie/commitlint/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/commitlint/actions/workflows/docker.yml)
+
 ## docker
 [![docker build](https://github.com/toolhippie/docker/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/docker/actions/workflows/docker.yml)
 
