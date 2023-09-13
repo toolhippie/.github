@@ -15,6 +15,9 @@
 ## asciidoctor
 [![docker build](https://github.com/toolhippie/asciidoctor/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/asciidoctor/actions/workflows/docker.yml)
 
+## auto-changelog
+[![docker build](https://github.com/toolhippie/auto-changelog/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/auto-changelog/actions/workflows/docker.yml)
+
 ## aws
 [![docker build](https://github.com/toolhippie/aws/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/aws/actions/workflows/docker.yml)
 
@@ -41,6 +44,9 @@
 
 ## git
 [![docker build](https://github.com/toolhippie/git/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/git/actions/workflows/docker.yml)
+
+## gitlab-release
+[![docker build](https://github.com/toolhippie/gitlab-release/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/gitlab-release/actions/workflows/docker.yml)
 
 ## goswagger
 [![docker build](https://github.com/toolhippie/goswagger/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/goswagger/actions/workflows/docker.yml)
