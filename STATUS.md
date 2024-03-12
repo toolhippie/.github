@@ -51,6 +51,9 @@
 ## goswagger
 [![docker build](https://github.com/toolhippie/goswagger/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/goswagger/actions/workflows/docker.yml)
 
+## imago
+[![docker build](https://github.com/toolhippie/imago/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/imago/actions/workflows/docker.yml)
+
 ## jjb
 [![docker build](https://github.com/toolhippie/jjb/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/jjb/actions/workflows/docker.yml)
 
