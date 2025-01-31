@@ -9,6 +9,9 @@
 ## ansible-later
 [![docker build](https://github.com/toolhippie/ansible-later/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/ansible-later/actions/workflows/docker.yml)
 
+## ansible-lint
+[![docker build](https://github.com/toolhippie/ansible-lint/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/ansible-lint/actions/workflows/docker.yml)
+
 ## archiver
 [![docker build](https://github.com/toolhippie/archiver/actions/workflows/docker.yml/badge.svg)](https://github.com/toolhippie/archiver/actions/workflows/docker.yml)
 
